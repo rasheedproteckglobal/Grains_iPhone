@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CallUs" representedClassName="CallUs" syncable="YES">
+        <attribute name="callID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="infoAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="infoEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="linkToCall" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="titleAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voiceKeyAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voiceKeyEN" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Events" representedClassName="Events" syncable="YES">
+        <attribute name="articleDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventsID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imagePathAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePathEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summaryAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summaryEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GeneralDepartment" representedClassName="GeneralDepartment" syncable="YES">
+        <attribute name="departmentID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nameAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="policeStation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortNameAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortNameEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voiceKeyAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voiceKeyEN" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="departmentDetails" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GeneralDepartmentDetail" inverseName="department" inverseEntity="GeneralDepartmentDetail" syncable="YES"/>
+    </entity>
+    <entity name="GeneralDepartmentDetail" representedClassName="GeneralDepartmentDetail" syncable="YES">
+        <attribute name="descriptionAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="titleAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GeneralDepartment" inverseName="departmentDetails" inverseEntity="GeneralDepartment" syncable="YES"/>
+    </entity>
+    <entity name="Master" representedClassName="Master" syncable="YES">
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isCached" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isSideMenu" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isSideMenuIcon" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isSideMenuOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="masterID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="menuIcon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="serviceDescAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceDescEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sideMenuIcon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="urlAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vcKeywordAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vcKeywordEN" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="News" representedClassName="News" syncable="YES">
+        <attribute name="articleDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePathAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePathEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="newsID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="summaryAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summaryEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlEN" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Notifications" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="notificationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pharmacy" representedClassName="Pharmacy" syncable="YES">
+        <attribute name="dayType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="descriptionAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pharmacyID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="SplashImage" representedClassName="SplashImage" syncable="YES">
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="splashID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Video" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploaded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="VoiceCommand" representedClassName="VoiceCommand" syncable="YES">
+        <attribute name="keyAR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keyEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="masterID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CallUs" positionX="-63" positionY="-27" width="128" height="225"/>
+        <element name="Events" positionX="-54" positionY="258" width="128" height="238"/>
+        <element name="GeneralDepartment" positionX="124" positionY="180" width="128" height="270"/>
+        <element name="GeneralDepartmentDetail" positionX="-738" positionY="135" width="128" height="148"/>
+        <element name="Master" positionX="250" positionY="45" width="128" height="360"/>
+        <element name="News" positionX="81" positionY="-108" width="128" height="238"/>
+        <element name="Notifications" positionX="250" positionY="-54" width="128" height="105"/>
+        <element name="Pharmacy" positionX="-261" positionY="60" width="128" height="165"/>
+        <element name="SplashImage" positionX="-245" positionY="-36" width="128" height="75"/>
+        <element name="Video" positionX="-396" positionY="-54" width="128" height="150"/>
+        <element name="VoiceCommand" positionX="-576" positionY="-36" width="128" height="90"/>
+    </elements>
+</model>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>kLocationNotDetermined</key>
+	<string>We could not determined your location&quot; :  &quot;We could not determined your location</string>
+	<key>kDone</key>
+	<string>Done</string>
+	<key>kLocalization</key>
+	<string>en</string>
+	<key>kCongrats</key>
+	<string>Congratulation</string>
+	<key>kError</key>
+	<string>Alert!</string>
+	<key>kMessage</key>
+	<string>Due to an unforseen error \n your request cannot be processed at this time. \n Please try again later.</string>
+	<key>kPhoneNumberNotValid</key>
+	<string>Phone number is not valid.</string>
+	<key>kCameraNoAvailable</key>
+	<string>Camera Device Not Available.</string>
+	<key>kModify</key>
+	<string>Modify</string>
+	<key>kTitleLanguage</key>
+	<string>English</string>
+	<key>kEmailDeviceNotConfigured</key>
+	<string>Your device is not configured for email.</string>
+	<key>kWrongEmail</key>
+	<string>Entered email address is not valid.</string>
+	<key>kAll</key>
+	<string>All</string>
+	<key>kReset</key>
+	<string>Reset</string>
+	<key>kOk</key>
+	<string>Ok</string>
+	<key>kSave</key>
+	<string>Save</string>
+	<key>kCallingNotSupported</key>
+	<string>Your device doesn&apos;t support calling.</string>
+	<key>kClear</key>
+	<string>Clear</string>
+	<key>kCancel</key>
+	<string>Cancel</string>
+	<key>kThankYou</key>
+	<string>Thank You!</string>
+	<key>action_settings</key>
+	<string>Settings</string>
+	<key>eng_txt</key>
+	<string>English</string>
+	<key>arabic_txt</key>
+	<string>العربية</string>
+	<key>close</key>
+	<string>Close</string>
+	<key>open </key>
+	<string>Open</string>
+	<key>serviceTxt</key>
+	<string>Allow app to run in background</string>
+	<key>push_notificationTxt</key>
+	<string>Push Notification</string>
+	<key>notificationSoundTxt</key>
+	<string>Sound Notification</string>
+	<key>notificationVibrationTxt</key>
+	<string>Vibration Notification</string>
+	<key>announcmentTxt</key>
+	<string>Announcements</string>
+	<key>onTxt</key>
+	<string>On</string>
+	<key>offsTxt</key>
+	<string>Off</string>
+	<key>call</key>
+	<string>Call</string>
+	<key>deleteTxt</key>
+	<string>Delete</string>
+	<key>okTxt</key>
+	<string>Ok</string>
+	<key>cancellTxt</key>
+	<string>Cancel</string>
+	<key>descriptionSettings</key>
+	<string>Are you sure you want to change settings?</string>
+	<key>loadingTxt</key>
+	<string>Loading...</string>
+	<key>saveTxt</key>
+	<string>Save</string>
+	<key>confirmMsgTxt</key>
+	<string>Are you sure you want to change setting ?</string>
+	<key>confirmMsgTxtExit</key>
+	<string>Are you sure you want to exit ?</string>
+	<key>yesTxt</key>
+	<string>Yes</string>
+	<key>noTxt</key>
+	<string>No</string>
+	<key>confirmTxt</key>
+	<string>Confirmation</string>
+	<key>offlineTxt</key>
+	<string>You need Internet connection to view this page</string>
+	<key>augmentedLocatonText</key>
+	<string>Please switch on your Location service and try again.</string>
+	<key>cameraTxt</key>
+	<string>Camera</string>
+	<key>imageGalleryTxt</key>
+	<string>Image Gallery</string>
+	<key>locNotEnabled</key>
+	<string>Location not enabled</string>
+	<key>locNotAvailable</key>
+	<string>We could not determined your location.</string>
+	<key>kSettingsChangedConfirmation</key>
+	<string>Are you sure you want to change settings?</string>
+	<key>facebookTxt</key>
+	<string>Facebook</string>
+</dict>
+</plist>
